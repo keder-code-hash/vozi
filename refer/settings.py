@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-r#@z1itjjn5pebk^92stqfth4(xr=itp#yivrvi(*4j2)&n&bm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vozi.herokuapp.com']
+ALLOWED_HOSTS = ['vozi.herokuapp.com','*']
 
 
 # Application definition

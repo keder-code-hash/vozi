@@ -29,6 +29,7 @@ def index(request):
                     ).save() 
             return render(request,"thankyou.html",context={'error':error,'invite_code':refer_code})
         except:
-            error="This phone number already exists"
+            error="This phone number may already exist or referral code is not valid"
+            refer_code=""
         return render(request,"thankyou.html",context={'error':error,'invite_code':refer_code})
 
