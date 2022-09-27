@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>VOZI DRIVE - Become a driver</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href={% static "style/index.css" %}>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script> -->
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <div class="nav">
+      <a href="/"><img src={% static "Image/Vector.svg" %} alt="VOZI DRIVE"></a>
+      <div class="icons">
+         <a><img src={% static "Image/telegram.svg" %} alt="telegram"></a>
+         <a><img src={% static "Image/facebook.svg" %} alt="telegram"></a>
+         <a><img id="insta" src={% static "Image/instagram.svg" %} alt="telegram"></a>
+         <a><img src={% static "Image/linkedin.svg" %} alt="telegram"></a>
+         <button class="contact-btn magnetic">Contact Us</button>
+      </div>
+   </div>
+
+
+   <div class="spaces"></div>
+
+  <div style="margin:10%;text-align: center;font-size: 2rem;font-family: cf-normal;"> THANKYOU YOUR REFRAL CODE IS  <b><span style="color: green;" id="refer-code">{{ invite_code }}</span></b> </div>
+   <div class="spaces"></div>
+   
+
+
+
+
+
+   <!-- FOOTER -->
+   <footer class="footer">
+      <div class="footer-cotainer">
+         <div class="footer-logo"><img src= {% static "Image/Logo.svg" %}></div>
+         <div class="contact-us">
+            <span id="txt-cont">CONTACT US</span><br><br>
+            <p style="color:white">M : +91-999 666 9999</p>
+            <p>EMAIL : connect@vozi.in</p>
+            <br>
+            <a id="fb" href="#"><img src={% static "Image/insta.svg" %} ></a>
+            <a href="#"><img src={% static "Image/linkedin.svg" %} ></a>
+            <a id="insta" href="#"><img src={% static "Image/instagram.svg" %} ></a>
+            <a id="telegram-img" href="#"><img src={% static "Image/telegram.svg" %} ></a>
+         </div>
+         <div>
+            <div class="download-app">Download The app</div>
+            <div class="download-app-img"><img src={% static "Image/one.svg" %}><img src={% static "Image/two.svg" %} ></ div>
+
+         </div>
+
+      </div>
+      <div class="lower-footer">
+         <div>Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</div>
+         <div>
+            <ul>
+               <li>NOTICES</li>
+               <li>TERM & CONDITIONS</li>
+               <li id="privacy">Privacy Policy</li>
+            </ul>
+         </div>
+      </div>
+      <div class="lower-mob">
+         <div>
+            <ul>
+               <li>NOTICES</li>
+               <li>TERM & CONDITIONS</li>
+               <li id="privacy">Privacy Policy</li>
+            </ul>
+         </div>
+         <span id="copy">Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</span>
+      </div>
+      
+   </footer>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         offset: 120,
+         duration: 400,
+         disable: function () {
+            var maxWidth = 800;
+            return window.innerWidth < maxWidth;
+         }
+      });
+
+   </script>
+   <!-- custom js -->
+</body>
+
+</html>

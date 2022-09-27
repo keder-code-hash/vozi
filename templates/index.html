@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>VOZI DRIVE - Become a driver</title> 
+   <link rel="stylesheet" href={% static "style/index.css" %}>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+</head>
+
+<body>
+   <div class="nav">
+      <a href="/"><img src={% static "Image/Vector.svg" %} alt="VOZI DRIVE"></a>
+      <div class="icons">
+         <a><img src={% static "Image/telegram.svg" %} alt="telegram"></a>
+         <a><img src={% static "Image/facebook.svg" %} alt="telegram"></a>
+         <a><img id="insta" src={% static "Image/instagram.svg" %} alt="telegram"></a>
+         <a><img src={% static "Image/linkedin.svg" %} alt="telegram"></a>
+         <button class="contact-btn magnetic">Contact Us</button>
+      </div>
+   </div>
+   <div class="mob-header">
+      <div class="mob-its">it’s your turn to join<br> <span>Hands with Future</span>.</div>
+      <div class="mob-make">Make the most of your time on the road on the platform with the largest network of active
+         riders.</div>
+   </div>
+   <div class="bg-main">
+   </div>
+   <div class="header-content">
+      <div class="main-heading">
+         <div class="heading-content">
+            <span class="para-thin" data-aos="fade-up" data-aos-duration="500">it’s your turn to join</span><br>Hands
+            with Future.
+            <br>
+            <p data-aos="fade-up" data-aos-duration="500">Make the most of your time on the road on the platform with
+               the largest network of active riders.</p>
+         </div>
+      </div>
+      <div>
+
+         <form class="input-form" action="{% url 'index' %}" method="POST">
+            {% csrf_token %}
+            <div class="form-inner">
+            <p>Join the initiative <span class="become-driver"><br>Become a driver.</span></p>
+            <input type="text" name="name" id="name" placeholder="Full Name">
+            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number">
+            <input type="text" name="city" id="city" placeholder="City">
+            <input type="text" name="code" id="code" placeholder="Invite Code (optional)">
+            <span class="aggrement-text">
+               By proceeding, I agree to Vozi’s <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.<br><br> I have read the Privacy Policy. I also agree that Vozi or its representatives may contact me by email, phone, SMS (including by automated means) or WhatsApp, at the email address or number I provide for support purposes.
+            </span>
+            <br>
+            <button type="submit" class="btn-submit magnetic">Submit</button>
+         </div>
+         </form>
+         
+      </div>
+   </div>
+   <div class="why-drive">
+      <img class="point-img" src={% static "Image/first.svg" %} alt="">
+      <div class="why-drive-us-container">
+         <div class="why-drive-with-us" data-aos="fade-up" data-aos-duration="500">Why drive with us</div>
+         <div class="smal-box-container">
+            <div class="boxes" data-aos="fade-up" data-aos-duration="500">
+               <div class="box-logo"><img id="one" src={% static "Image/Logos/inr.png" %}></div>
+               <div class="box-content">Withdraw earnings anytime from your<br> driver’s wallet.</div>
+            </div>
+
+
+            <div class="boxes" data-aos="fade-up" data-aos-duration="600">
+               <div id="tt" class="box-logo"><img src={% static "Image/Logos/Accesstime.png" %}></div>
+               <div class="box-content">Choose your own work timings with 24/7 Helpline access. Get Emergency assistance
+                  on the Vozi App.</div>
+            </div>
+
+            <div class="boxes" data-aos="fade-up" data-aos-duration="800">
+               <div class="box-logo"><img src={% static "Image/Logos/Electriccar.png" %}></div>
+               <div id="join-comm" class="box-content">Join the community for sustainable future.</div>
+            </div>
+
+
+         </div>
+
+
+
+         <div class="smal-box-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="boxes">
+               <div class="box-logo"><img src={% static "Image/Logos/Maskgroup.png" %} ></div>
+               <div id="join-comm" class="box-content">Join the community for sustainable future.</div>
+            </div>
+
+
+            <div class="boxes">
+               <div class="box-logo"><img src={% static "Image/Logos/Starhalf.png" %} data-aos="fade-up" data-aos-duration="1000"></div>
+               <div id="now-ability" class="box-content">Now have the ability to rate your passengers post every ride.
+               </div>
+            </div>
+
+            <div class="boxes">
+               <div id="drive-img" class="box-logo"><img src={% static "Image/Logos/Steeringwheel.png" %} data-aos="fade-up"
+                     data-aos-duration="1000"></div>
+               <div id="drive" class="box-content">Drivers’ training for EV Vehicles.</div>
+            </div>
+
+
+         </div>
+         <div class="vizifund-btn magnetic"><img src={% static "Image/Vector.svg" %} > </div>
+         <p class="vozi-drivers">Vozi Drivers’ Fund for Health Insurance, Educational Scholarships and more.</p>
+
+
+
+
+         <!-- <div class="test"></div> -->
+      </div>
+   </div>
+   <div class="taxi-div">
+      <div class="taxi-div-container">
+       
+         <div class="left-taxi-div">
+            <img id="bg-points" src={% static "Image/ver-points1.svg" %}>
+            <div class="what-need" data-aos="fade-up" data-aos-duration="600">What you need?</div>
+            <div class="requirement" data-aos="fade-up" data-aos-duration="600">01. requirements</div>
+            <div>
+               <ul>
+                  <li>Be at least 18 years old</li>
+                  <li>Pass Background Check</li>
+               </ul>
+            </div>
+            <br><br><br>
+
+            <div class="requirement" data-aos="fade-up" data-aos-duration="600">02. documents</div>
+            <div>
+               <ul>
+                  <li>Valid driver’s licence (private or commercial).</li>
+                  <li>Proof of residency in your city, state or province.</li>
+               </ul>
+            </div>
+         </div>
+         <div class="right-taxi-div"><img src={% static "Image/car.png" %}></div>
+      </div>
+   </div>
+   <div class="mobile-bg">
+      <div class="app-bg">
+         <span class="theApp" data-aos="fade-up" data-aos-duration="600">The Driver App</span><br>
+         <span class="easy-to" data-aos="fade-up" data-aos-duration="800">Easy to use and reliable, the app was built
+            for drivers, with drivers.</span><br> <button class="magnetic" id="download-btn">Download the App</button>
+      </div><br>
+
+      <div>
+         <img id="app" data-aos="fade-up" data-aos-duration="600" src={% static "Image/App.png" %}> 
+      </div>
+   </div>
+   <br><br>
+
+   <div class="car-travel">
+      <span id="span-point"></span>
+      <div class="vozi-container">
+         <div class="vozi-raodmap" data-aos="fade-up" data-aos-duration="600">The Vozi Roadmap</div>
+      </div>
+      <div class="travel-container" data-aos="fade-up" data-aos-duration="600"></div>
+   </div>
+   <div class="car-mobile">
+      <div class="vozi-raodmap" data-aos="fade-up" data-aos-duration="600">The Vozi Roadmap</div>
+      <img id="verticle-roadmap" src={% static "Image/verticle-roadmap.svg " %} >
+   </div>
+
+   <div class="lower-car-section">
+      <div class="lower-car-left">
+         <img src={% static "Image/low-car.png " %}>
+      </div>
+      <div class="lower-car-right">
+         <div class="we-incharge" data-aos="fade-up" data-aos-duration="600">We are In-Charge.</div>
+         <p data-aos="fade-up" data-aos-duration="600">We at Vozi are glad to announce that we have already more than
+            100 pre-approved charging stations set up in Bangalore. Eyeing and exponential growth of e-cars on road, we
+            are working hard to increase our charging station footprints</p>
+      </div>
+   </div>
+
+
+   <!-- FOOTER -->
+   <footer class="footer">
+      <div class="footer-cotainer">
+         <div class="footer-logo"><img src= {% static "Image/Logo.svg" %}></div>
+         <div class="contact-us">
+            <span id="txt-cont">CONTACT US</span><br><br>
+            <p style="color:white">M : +91-999 666 9999</p>
+            <p>EMAIL : connect@vozi.in</p>
+            <br>
+            <a id="fb" href="#"><img src={% static "Image/insta.svg" %} ></a>
+            <a href="#"><img src={% static "Image/linkedin.svg" %} ></a>
+            <a id="insta" href="#"><img src={% static "Image/instagram.svg" %} ></a>
+            <a id="telegram-img" href="#"><img src={% static "Image/telegram.svg" %} ></a>
+         </div>
+         <div>
+            <div class="download-app">Download The app</div>
+            <div class="download-app-img"><img src={% static "Image/one.svg" %}><img src={% static "Image/two.svg" %} ></ div>
+
+         </div>
+
+      </div>
+      <div class="lower-footer">
+         <div>Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</div>
+         <div>
+            <ul>
+               <li>NOTICES</li>
+               <li>TERM & CONDITIONS</li>
+               <li id="privacy">Privacy Policy</li>
+            </ul>
+         </div>
+      </div>
+      <div class="lower-mob">
+         <div>
+            <ul>
+               <li>NOTICES</li>
+               <li>TERM & CONDITIONS</li>
+               <li id="privacy">Privacy Policy</li>
+            </ul>
+         </div>
+         <span id="copy">Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</span>
+      </div>
+      
+   </footer>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+
+   <script>
+      AOS.init({
+         offset: 120,
+         duration: 400,
+         disable: function () {
+            var maxWidth = 800;
+            return window.innerWidth < maxWidth;
+         }
+      });
+
+   </script>
+   <!-- custom js -->
+</body>
+
+</html>
