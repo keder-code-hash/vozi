@@ -573,8 +573,8 @@
    font-family: cf-semi-bold;
    text-transform: uppercase;
    font-size: 0.9rem;
-   margin-top: 100px;
-   padding: 1px 8vw;
+   margin-top: 0px;
+   padding: 50px 8vw;
 }
 .lower-footer ul{
    display: flex;
