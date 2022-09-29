@@ -18,71 +18,168 @@
 
 <body>
    <div class="nav">
-      <a href="/"><img src={% static "Image/Vector.svg" %} alt="VOZI DRIVE"></a>
+      <a href="/"><img id="main-logo" src={% static "Image/vector.png" %} alt="VOZI DRIVE"></a>
+      <style>
+         #main-logo{
+            height: 50px;
+         }
+      </style>
       <div class="icons">
          <a><img src={% static "Image/telegram.svg" %} alt="telegram"></a>
-         <a><img src={% static "Image/facebook.svg" %} alt="telegram"></a>
-         <a><img id="insta" src={% static "Image/instagram.svg" %} alt="telegram"></a>
+         <!-- <a><img src={% static "Image/facebook.svg" %} alt="telegram"></a> -->
+         <!-- <a><img id="insta" src={% static "Image/instagram.svg" %} alt="telegram"></a> -->
          <a><img src={% static "Image/linkedin.svg" %} alt="telegram"></a>
          <button class="contact-btn magnetic">Contact Us</button>
       </div>
    </div>
 
 
-   <div class="spaces"></div>
+  <div class="refer-message">
+   <style>
+      .refer-message{
+         background-color: black;
+         padding: 8%;
+         color: white;
+         text-align: left;
+      }
+      .join-community{
+         padding: 20px;
+         color: black;
+         border-radius: 5px;
+         border: 2px solid #00FFF0;
+         z-index: 5;
+         position: relative;
+         cursor: pointer;
+         margin-top: 35px;
+         transition-duration: 0.5s;
+      }
+      .join-community:hover{
+         transform: scale(1.05);
+      }
+      .our-team-call{
+         font-family: cf-semi-bold;
+         font-size: 3rem;
+      }
+      .make-the-most{
+         font-size: 1rem;
+         font-family: cf-thin;
+         width: 350px;
+         opacity: 0.9;
+         margin-top: 20px;
+      }
+      .code-container{
+         padding: 10px;
+         border: 2px dashed white;
+         z-index: 99;
+         position: relative;
+         cursor: pointer;
+         margin-bottom: 10px;
+      }
+     
+      .p-code{
+         font-size: 1rem;
+         color: white;
+         margin-bottom: 20px;
+      }
+      .first-img{
+         position: absolute;
+         top:500px;
+        
+      }
+      .thanyou-resp{
+         text-align: left;font-size: 2.5rem;font-family: cf-thin;
+      }
+      @media screen and (max-width: 1100px) {
+         .first-img {
+               display: none;
+         }
+         .thanyou-resp{
+         text-align: left;font-size: 1.2rem;font-family: cf-thin;
+         margin-top: 30px;
+      }
+      .our-team-call{
+         font-size: 1.5rem;
+        
+      }
+      .make-the-most{
+         font-size: 0.8rem;
+      }
+   }
+   </style>
 
-  <div style="margin:10%;text-align: center;font-size: 2rem;font-family: cf-normal;"> THANKYOU YOUR REFRAL CODE IS  <b><span style="color: green;" id="refer-code">{{ invite_code }}</span></b> </div>
-  Error:  <b><span style="color: red;" id="refer-code">{{ error }}</span></b>
-   <div class="spaces"></div>
+  <div  class="thanyou-resp" > Thank you for your response.
+   <br>
+   <span class="our-team-call">Our team will soon get in touch with you.</span><br>
+   <div class="make-the-most">Make the most of your time on the road on the platform which larget network of active cars.</div>
+   <br>
+   <p class="p-code">Refral code</p>
+   <b><span onclick="copyDivToClipboard()"  class="code-container" style="color: green;" id="refer-code">{{ invite_code }}</span> </b>
+   <br>
+   <button class="join-community">Join our Telegram Drive Community</button>
+    </div>
+  <b><span style="color: red;" id="refer-code">{{ error }}</span></b>
+
+ 
    
+</div>
+<img class="first-img" src="static/Image/first.svg" %}>
 
-
-
-
+<script>
+   function copyDivToClipboard() {
+      alert("Code copied !")
+       var range = document.createRange();
+       range.selectNode(document.getElementById("refer-code"));
+       window.getSelection().removeAllRanges(); // clear current selection
+       window.getSelection().addRange(range); // to select text
+       document.execCommand("copy");
+       window.getSelection().removeAllRanges();// to deselect
+   }
+</script>
 
    <!-- FOOTER -->
-   <footer class="footer">
-      <div class="footer-cotainer">
-         <div class="footer-logo"><img src= {% static "Image/Logo.svg" %}></div>
-         <div class="contact-us">
-            <span id="txt-cont">CONTACT US</span><br><br>
-            <p style="color:white">M : +91-999 666 9999</p>
-            <p>EMAIL : connect@vozi.in</p>
-            <br>
-            <a id="fb" href="#"><img src={% static "Image/insta.svg" %} ></a>
-            <a href="#"><img src={% static "Image/linkedin.svg" %} ></a>
-            <a id="insta" href="#"><img src={% static "Image/instagram.svg" %} ></a>
-            <a id="telegram-img" href="#"><img src={% static "Image/telegram.svg" %} ></a>
-         </div>
-         <div>
-            <div class="download-app">Download The app</div>
-            <div class="download-app-img"><img src={% static "Image/one.svg" %}><img src={% static "Image/two.svg" %} ></ div>
+ <!-- FOOTER -->
+ <footer class="footer">
+   <div class="footer-cotainer">
+      <div class="footer-logo"><img src= {% static "Image/Logo.png" %}></div>
+      <div class="contact-us">
+         <span id="txt-cont">CONTACT US</span><br><br>
+         <p style="color:white">M : +91-994 561 0733</p>
+         <p>EMAIL : talktous@vozi.in</p>
+         <br>
+         <!-- <a id="fb" href="#"><img src={% static "Image/insta.svg" %} ></a> -->
+         <a href="#"><img src={% static "Image/linkedin.svg" %} ></a>
+         <!-- <a id="insta" href="#"><img src={% static "Image/instagram.svg" %} ></a> -->
+         <a id="telegram-img" href="https://t.me/+fwiz0HjcT6s4Mzc1" target="_blank"><img src={% static "Image/telegram.svg" %} ></a>
+      </div>
+      <div>
+         <div class="download-app">Download The app</div>
+         <div class="download-app-img"><img src={% static "Image/one.svg" %}><img src={% static "Image/two.svg" %} ></ div>
 
-         </div>
+      </div>
 
-      </div>
-      <div class="lower-footer">
-         <div>Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</div>
-         <div>
-            <ul>
-               <li>NOTICES</li>
-               <li>TERM & CONDITIONS</li>
-               <li id="privacy">Privacy Policy</li>
-            </ul>
-         </div>
-      </div>
-      <div class="lower-mob">
-         <div>
-            <ul>
-               <li>NOTICES</li>
-               <li>TERM & CONDITIONS</li>
-               <li id="privacy">Privacy Policy</li>
-            </ul>
-         </div>
-         <span id="copy">Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</span>
-      </div>
-      
-   </footer>
+   </div>
+   
+</footer>
+<div style="background-color: black;" class="lower-footer">
+   <div>Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</div>
+   <div>
+      <ul>
+         <li>NOTICES</li>
+         <li>TERM & CONDITIONS</li>
+         <li id="privacy">Privacy Policy</li>
+      </ul>
+   </div>
+</div>
+<div class="lower-mob">
+   <div>
+      <ul>
+         <li>NOTICES</li>
+         <li>TERM & CONDITIONS</li>
+         <li id="privacy">Privacy Policy</li>
+      </ul>
+   </div>
+   <span id="copy">Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</span>
+</div>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script>
       AOS.init({

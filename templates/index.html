@@ -13,14 +13,20 @@
 
 <body>
    <div class="nav">
-      <a href="/"><img src={% static "Image/Vector.svg" %} alt="VOZI DRIVE"></a>
+      <a href="/"><img id="main-logo" src={% static "Image/vector.png" %} alt="VOZI DRIVE"></a>
       <div class="icons">
-         <a><img src={% static "Image/telegram.svg" %} alt="telegram"></a>
-         <a><img src={% static "Image/facebook.svg" %} alt="telegram"></a>
-         <a><img id="insta" src={% static "Image/instagram.svg" %} alt="telegram"></a>
+         <a href="https://t.me/+fwiz0HjcT6s4Mzc1" target="_blank"><img src={% static "Image/telegram.svg" %} alt="telegram"></a>
+         <!-- <a><img src={% static "Image/facebook.svg" %} alt="telegram"></a>
+         <a><img id="insta" src={% static "Image/instagram.svg" %} alt="telegram"></a> -->
          <a><img src={% static "Image/linkedin.svg" %} alt="telegram"></a>
          <button class="contact-btn magnetic">Contact Us</button>
       </div>
+      <style>
+         #main-logo{
+            height: 50px;
+         }
+         
+      </style>
    </div>
    <div class="mob-header">
       <div class="mob-its">it’s your turn to join<br> <span>Hands with Future</span>.</div>
@@ -62,7 +68,7 @@
    <div class="why-drive">
       <img class="point-img" src={% static "Image/first.svg" %} alt="">
       <div class="why-drive-us-container">
-         <div class="why-drive-with-us" data-aos="fade-up" data-aos-duration="500">Why drive with us</div>
+         <div class="why-drive-with-us" data-aos="fade-up" data-aos-duration="500">Why drive with us ?</div>
          <div class="smal-box-container">
             <div class="boxes" data-aos="fade-up" data-aos-duration="500">
                <div class="box-logo"><img id="one" src={% static "Image/Logos/inr.png" %}></div>
@@ -183,16 +189,16 @@
    <!-- FOOTER -->
    <footer class="footer">
       <div class="footer-cotainer">
-         <div class="footer-logo"><img src= {% static "Image/Logo.svg" %}></div>
+         <div class="footer-logo"><img src= {% static "Image/Logo.png" %}></div>
          <div class="contact-us">
             <span id="txt-cont">CONTACT US</span><br><br>
-            <p style="color:white">M : +91-999 666 9999</p>
-            <p>EMAIL : connect@vozi.in</p>
+            <p style="color:white">M : +91-994 561 0733</p>
+            <p>EMAIL : talktous@vozi.in</p>
             <br>
-            <a id="fb" href="#"><img src={% static "Image/insta.svg" %} ></a>
+            <!-- <a id="fb" href="#"><img src={% static "Image/insta.svg" %} ></a> -->
             <a href="#"><img src={% static "Image/linkedin.svg" %} ></a>
-            <a id="insta" href="#"><img src={% static "Image/instagram.svg" %} ></a>
-            <a id="telegram-img" href="#"><img src={% static "Image/telegram.svg" %} ></a>
+            <!-- <a id="insta" href="#"><img src={% static "Image/instagram.svg" %} ></a> -->
+            <a id="telegram-img" href="https://t.me/+fwiz0HjcT6s4Mzc1" target="_blank"><img src={% static "Image/telegram.svg" %} ></a>
          </div>
          <div>
             <div class="download-app">Download The app</div>
@@ -225,6 +231,7 @@
    </div>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
 
+   
    <script>
       AOS.init({
          offset: 120,
