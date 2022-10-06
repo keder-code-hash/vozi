@@ -602,6 +602,57 @@
 }
  }
 
+
+ 
+ @media screen and (max-width: 1300px) {
+   .input-form {
+      width: 40vw;
+   }
+
+   .input-form input {
+      width: 95%;
+   }
+
+   .taxi-div-container img {
+      position: absolute;
+      right: -110px;
+      scale: 0.75;
+      overflow: hidden;
+   }
+
+   #bg-points {
+      width: 65vw;
+      height: 92%;
+   }
+
+   #app {
+      scale: 0.85;
+   }
+
+   #bg-points {
+      width: 91vw;
+      height: 125%;
+      overflow: hidden;
+      right: -204px;
+
+   }
+
+   .taxi-div {
+      height: 768px;
+   }
+
+   .lower-car-left img {
+      margin-top: 80px;
+      width: 57vw;
+   }
+
+   .app-bg {
+      margin-top: 150px;
+      margin-right: -1vw;
+   }
+}
+
+
  @media screen and (max-width: 1000px){
    .lower-car-section{
       flex-wrap: wrap;

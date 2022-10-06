@@ -6,26 +6,397 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>VOZI DRIVE - Become a driver</title> 
+   <title>VOZI DRIVE - Become a driver</title>
    <link rel="stylesheet" href={% static "style/index.css" %}>
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
    <div class="nav">
       <a href="/"><img id="main-logo" src={% static "Image/vector.png" %} alt="VOZI DRIVE"></a>
       <div class="icons">
-         <a href="https://t.me/+fwiz0HjcT6s4Mzc1" target="_blank"><img src={% static "Image/telegram.svg" %} alt="telegram"></a>
+         <a href="https://t.me/+fwiz0HjcT6s4Mzc1" target="_blank"><img src={% static "Image/telegram.svg" %}
+               alt="telegram"></a>
          <!-- <a><img src={% static "Image/facebook.svg" %} alt="telegram"></a>
          <a><img id="insta" src={% static "Image/instagram.svg" %} alt="telegram"></a> -->
          <a><img src={% static "Image/linkedin.svg" %} alt="telegram"></a>
          <button class="contact-btn magnetic">Contact Us</button>
       </div>
       <style>
-         #main-logo{
+         #main-logo {
             height: 50px;
          }
+
          
+ @media screen and (max-width: 1300px) {
+   .input-form {
+      width: 40vw;
+   }
+
+   .input-form input {
+      width: 95%;
+   }
+
+   .taxi-div-container img {
+      position: absolute;
+      right: -110px;
+      scale: 0.75;
+      overflow: hidden;
+   }
+
+   #bg-points {
+      width: 65vw;
+      height: 92%;
+   }
+
+   #app {
+      scale: 0.85;
+   }
+
+   #bg-points {
+      width: 91vw;
+      height: 125%;
+      overflow: hidden;
+      right: -204px;
+
+   }
+
+   .taxi-div {
+      height: 768px;
+   }
+
+   .lower-car-left img {
+      margin-top: 80px;
+      width: 57vw;
+   }
+
+   .app-bg {
+      margin-top: 150px;
+      margin-right: -1vw;
+   }
+}
+
+
+@media screen and (max-width: 1000px){
+   .lower-car-section{
+      flex-wrap: wrap;
+   }
+   .lower-car-left img{
+      width: 100vw;
+   }
+   .footer-cotainer{
+      flex-wrap: wrap;
+   }
+   .contact-us {
+      color: white;
+      font-family: cf-normal;
+      border-left: 2px solid rgb(160, 160, 160);
+      padding-left: 50px;
+      font-size: 1rem;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      border: none;
+      padding-left: 15px;
+  }
+  .footer-cotainer {
+   display: flex;
+   justify-content: center;
+   margin-left: 10vw;
+   text-align: center;
+}
+#app {
+   position: relative;
+   bottom: 0px;
+   transition-duration: 0.5s;
+   /* height: 682px; */
+   width: 90vw;
+}
+.mobile-bg {
+   width: 100%;
+   background-color: #E2EAEE;
+   height: auto;
+   background-position: center;
+   background-image: url(../Image/horr.png);
+   background-size: cover;
+   display: flex;
+   position: relative;
+   justify-content: center;
+   flex-wrap: wrap;
+   text-align: center;
+   overflow: hidden;
+   background-size: auto;
+   /* background-repeat: no-repeat; */
+}
+.nav{
+   flex-wrap: wrap;
+   width: 100%;
+}
+.why-drive-with-us{
+   width: 90vw;
+   margin-bottom: 30px;
+}
+.vozi-raodmap{
+   width: 75vw;
+   font-size: 1.5rem;
+   margin-bottom: 50px;
+   padding-bottom: 13px;
+   text-align: center;
+   display: block;
+   margin: auto;
+   margin-bottom: 50px;
+}
+.lower-car-right {
+   /* width: 380px; */
+   margin-left: 4vw;
+   overflow: hidden;
+   margin-top: 73px;
+   width: auto;
+   margin-bottom: 30px;
+}
+#verticle-roadmap{
+   width: 90vw;
+}
+.lower-footer ul {
+   display: flex;
+   list-style: none;
+   text-transform: uppercase;
+   flex-wrap: wrap;
+}
+.what-need{
+   width: auto;
+}
+*{
+   overflow-x:hidden;
+}
+.header-content{
+   flex-wrap: wrap;
+}
+.input-form {
+   width: 45vw;
+   max-width: 700px;
+   min-width: auto;
+   background-color: white;
+   border-radius: 0px;
+   padding-top: 35px;
+   padding-bottom: 11px;
+   margin-top: 250px;
+   border: 3px solid #00FFF0;
+   position: relative;
+   width: 90vw;
+   border-radius: 10px;
+   
+}
+#download-btn:hover{
+   cursor: pointer;
+   transform: scale(1);
+   border: 2px solid #00FFF0;
+}
+.form-inner {
+   width: 90%;
+}
+#name {
+   margin-top: 20px;
+}
+.input-form input {
+   width: 92%;
+    margin: 15px auto;
+    border-radius: 6px;
+    height: 40px;
+    background-color: #e2e2e2;
+    padding-left: 20px;
+    border: none;
+    margin-left: 1px;
+}
+.header-content{
+   top: 125px;
+}
+.why-drive-with-us{
+   font-size: 1.5rem;
+   padding-top: 295px;
+}
+.boxes {
+   display: flex;
+   width: 330px;
+   font-size: 1.2rem;
+   margin: 25px 0px;
+}
+.vizifund-btn {
+   width: 95%;
+}
+.taxi-div-container {
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 100px;
+   /* justify-content: space-between; */
+}
+.taxi-div-container img {
+   position: absolute;
+   right: 0px;
+   position: relative;
+   width: 100vw;
+   margin-top: 20px;
+
+}
+.we-incharge {
+   font-family: cf-semi-bold;
+   font-size: 2.2rem;
+   color: black;
+   border-bottom: 2px solid black;
+   padding-bottom: 20px;
+   padding-right: 0px;
+   width: 85vw;
+}
+.taxi-div-container {
+   padding-top: 10px;
+}
+.left-taxi-div {
+   display: block;
+   margin: auto;
+   text-align: center;
+}
+.requirement{
+   width: auto;
+}
+.taxi-div{
+   overflow: hidden;
+   height: 722px;
+}
+#bg-points{
+   display: none;
+}
+.icons{
+   display: none;
+}
+.app-bg {
+   margin-top: 50px;
+   margin-right: 4vw;
+   overflow: hidden;
+}
+#tt img{
+   margin-right: 110px;
+}
+#ttt img{
+   margin-right: 80px;
+}
+.box-logo img{
+   height: 25px;
+}
+#one {
+   height: 20px;
+}
+.box-content{
+   font-size: 0.9rem;
+}
+#now-ability{
+   margin-right: 5px;
+   margin-left: 10px;
+}
+.mob-header{
+   display: block;
+}
+#join-comm{
+   margin-left: -11px;
+}
+#drive{
+   margin-left: -11px;
+}
+#drive-img img{
+   position: relative;
+   top: -10px;
+}
+.car-travel{
+   display: none;
+}
+.car-mobile{
+   display: block;
+}
+.lower-car-left {
+   height: auto;
+   width: 100vw;
+   /* margin-top: 100px; */
+}
+.easy-to {
+   padding-bottom: 10px;
+   font-size: 1rem;
+   font-family: cf-semi-bold;
+   letter-spacing: 0.6px;
+   position: relative;
+   top: 15px;
+   padding-top: 5px;
+}
+.lower-car-section {
+   display: flex;
+   margin-top: 0px;
+}
+.lower-footer{
+   display: none;
+}
+.lower-mob{
+   display: flex;
+   flex-direction: column;
+}
+.lower-mob{
+   color: white;
+   background: black;
+   font-family: cf-normal;
+   margin-left: 0vw;
+   margin-top: -1px;
+   text-align: center;
+}
+.lower-mob li{
+   margin-bottom: 10px;
+   font-size: 0.9rem;
+   text-align: center;
+   position: relative;
+   right: 0px;
+}
+
+
+
+.mob-its{
+   font-size: 1.7rem;
+   font-family: cf-thin;
+   margin-top: 50px;
+   width: 80vw;
+   margin-bottom: 15px;
+}
+.mob-its span{
+   font-family: cf-semi-bold;
+   
+}
+.mob-make{
+   font-family: cf-normal;
+   width: 80vw;
+}
+.smal-box-container{
+   overflow: hidden;
+}
+.theApp{
+   font-size: 2rem;
+   padding-bottom: 10px;
+}
+#app{
+   scale: 0.9;
+   overflow: hidden;
+}
+.bg-main{
+   display: none;
+}
+.become-driver {
+   font-weight: bold;
+   font-family: cf-extra-bold;
+   text-transform: none;
+   font-size: 2rem;
+}
+.why-drive-us-container {
+   width: 85vw;
+   display: block;
+   margin: auto;
+   margin-top: 100px;
+}
+
+
+ }
       </style>
    </div>
    <div class="mob-header">
@@ -50,19 +421,22 @@
          <form class="input-form" action="{% url 'index' %}" method="POST">
             {% csrf_token %}
             <div class="form-inner">
-            <p>Join the initiative <span class="become-driver"><br>Become a driver.</span></p>
-            <input type="text" name="name" id="name" placeholder="Full Name">
-            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number">
-            <input type="text" name="city" id="city" placeholder="City">
-            <input type="text" name="code" id="code" placeholder="Invite Code (optional)">
-            <span class="aggrement-text">
-               By proceeding, I agree to Vozi’s <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.<br><br> I have read the Privacy Policy. I also agree that Vozi or its representatives may contact me by email, phone, SMS (including by automated means) or WhatsApp, at the email address or number I provide for support purposes.
-            </span>
-            <br>
-            <button type="submit" class="btn-submit magnetic">Submit</button>
-         </div>
+               <p>Join the initiative <span class="become-driver"><br>Become a driver.</span></p>
+               <input type="text" name="name" id="name" placeholder="Full Name">
+               <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number">
+               <input type="text" name="city" id="city" placeholder="City">
+               <input type="text" name="code" id="code" placeholder="Invite Code (optional)">
+               <span class="aggrement-text">
+                  By proceeding, I agree to Vozi’s <a href="#">Terms of Use</a> and acknowledge that I have read the <a
+                     href="#">Privacy Policy</a>.<br><br> I have read the Privacy Policy. I also agree that Vozi or its
+                  representatives may contact me by email, phone, SMS (including by automated means) or WhatsApp, at the
+                  email address or number I provide for support purposes.
+               </span>
+               <br>
+               <button type="submit" class="btn-submit magnetic">Submit</button>
+            </div>
          </form>
-         
+
       </div>
    </div>
    <div class="why-drive">
@@ -83,8 +457,8 @@
             </div>
 
             <div class="boxes" data-aos="fade-up" data-aos-duration="800">
-               <div class="box-logo"><img src={% static "Image/Logos/Electriccar.png" %}></div>
-               <div id="join-comm" class="box-content">Join the community for sustainable future.</div>
+               <div id="ttt" class="box-logo"><img src={% static "Image/Logos/Electriccar.png" %}></div>
+               <div id="join-comm" class="box-content">Get higher earnings with Electric Cars. Reduce your cost by 5 times.</div>
             </div>
 
 
@@ -94,26 +468,27 @@
 
          <div class="smal-box-container" data-aos="fade-up" data-aos-duration="1000">
             <div class="boxes">
-               <div class="box-logo"><img src={% static "Image/Logos/Maskgroup.png" %} ></div>
+               <div class="box-logo"><img src={% static "Image/Logos/Maskgroup.png" %}></div>
                <div id="join-comm" class="box-content">Join the community for sustainable future.</div>
             </div>
 
 
             <div class="boxes">
-               <div class="box-logo"><img src={% static "Image/Logos/Starhalf.png" %} data-aos="fade-up" data-aos-duration="1000"></div>
+               <div class="box-logo"><img src={% static "Image/Logos/Starhalf.png" %} data-aos="fade-up"
+                     data-aos-duration="1000"></div>
                <div id="now-ability" class="box-content">Now have the ability to rate your passengers post every ride.
                </div>
             </div>
 
             <div class="boxes">
-               <div id="drive-img" class="box-logo"><img src={% static "Image/Logos/Steeringwheel.png" %} data-aos="fade-up"
-                     data-aos-duration="1000"></div>
+               <div id="drive-img" class="box-logo"><img src={% static "Image/Logos/Steeringwheel.png" %}
+                     data-aos="fade-up" data-aos-duration="1000"></div>
                <div id="drive" class="box-content">Drivers’ training for EV Vehicles.</div>
             </div>
 
 
          </div>
-         <div class="vizifund-btn magnetic"><img src={% static "Image/Vector.svg" %} > </div>
+         <div class="vizifund-btn magnetic"><img src={% static "Image/Vector.svg" %}> </div>
          <p class="vozi-drivers">Vozi Drivers’ Fund for Health Insurance, Educational Scholarships and more.</p>
 
 
@@ -124,7 +499,7 @@
    </div>
    <div class="taxi-div">
       <div class="taxi-div-container">
-       
+
          <div class="left-taxi-div">
             <img id="bg-points" src={% static "Image/ver-points1.svg" %}>
             <div class="what-need" data-aos="fade-up" data-aos-duration="600">What you need?</div>
@@ -156,7 +531,7 @@
       </div><br>
 
       <div>
-         <img id="app" data-aos="fade-up" data-aos-duration="600" src={% static "Image/App.png" %}> 
+         <img id="app" data-aos="fade-up" data-aos-duration="600" src={% static "Image/App.png" %}>
       </div>
    </div>
    <br><br>
@@ -170,7 +545,7 @@
    </div>
    <div class="car-mobile">
       <div class="vozi-raodmap" data-aos="fade-up" data-aos-duration="600">The Vozi Roadmap</div>
-      <img id="verticle-roadmap" src={% static "Image/verticle-roadmap.svg" %} >
+      <img id="verticle-roadmap" src={% static "Image/verticle-roadmap.svg" %}>
    </div>
 
    <div class="lower-car-section">
@@ -189,25 +564,26 @@
    <!-- FOOTER -->
    <footer class="footer">
       <div class="footer-cotainer">
-         <div class="footer-logo"><img src= {% static "Image/Logo.png" %}></div>
+         <div class="footer-logo"><img src={% static "Image/Logo.png" %}></div>
          <div class="contact-us">
             <span id="txt-cont">CONTACT US</span><br><br>
             <p style="color:white">M : +91-994 561 0733</p>
             <p>EMAIL : talktous@vozi.in</p>
             <br>
             <!-- <a id="fb" href="#"><img src={% static "Image/insta.svg" %} ></a> -->
-            <a href="#"><img src={% static "Image/linkedin.svg" %} ></a>
+            <a href="#"><img src={% static "Image/linkedin.svg" %}></a>
             <!-- <a id="insta" href="#"><img src={% static "Image/instagram.svg" %} ></a> -->
-            <a id="telegram-img" href="https://t.me/+fwiz0HjcT6s4Mzc1" target="_blank"><img src={% static "Image/telegram.svg" %} ></a>
+            <a id="telegram-img" href="https://t.me/+fwiz0HjcT6s4Mzc1" target="_blank"><img src={% static "Image/telegram.svg" %}></a>
          </div>
          <div>
             <div class="download-app">Download The app</div>
-            <div class="download-app-img"><img src={% static "Image/one.svg" %}><img src={% static "Image/two.svg" %} ></ div>
+            <div class="download-app-img"><img src={% static "Image/one.svg" %}><img src={% static "Image/two.svg" %}></
+                  div>
+
+            </div>
 
          </div>
 
-      </div>
-      
    </footer>
    <div style="background-color: black;" class="lower-footer">
       <div>Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</div>
@@ -229,9 +605,9 @@
       </div>
       <span id="copy">Copyright © 2022 VR Mobility Pvt ltd. All rights reserved</span>
    </div>
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-   
+
    <script>
       AOS.init({
          offset: 120,
